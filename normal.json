@@ -1,0 +1,14 @@
+{
+  "player_id": "P001",
+  "player_name": "Virat",
+  "match_id": "M001",
+  "innings_id": "I001",
+  "runs": 60,
+  "balls_faced": 40,
+  "overs_bowled": 4,
+  "runs_conceded": 28,
+  "wickets": 2,
+  "catches": 1,
+  "runouts": 0,
+  "stumpings": 0
+}
