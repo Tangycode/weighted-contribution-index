@@ -1,0 +1,14 @@
+{
+  "player_id": "P000",
+  "player_name": "Test Player",
+  "match_id": "M000",
+  "innings_id": "I000",
+  "runs": 0,
+  "balls_faced": 0,
+  "overs_bowled": 0,
+  "runs_conceded": 0,
+  "wickets": 0,
+  "catches": 0,
+  "runouts": 0,
+  "stumpings": 0
+}
