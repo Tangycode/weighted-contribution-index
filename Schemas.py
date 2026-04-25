@@ -1,22 +1,29 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+from typing import Optional, Dict
 
-class PlayerInput(BaseModel):
-    runs_scored: int
-    balls_faced: int
-    strike_rate: float
+class WCIRequest(BaseModel):
+    player_id: str
+    player_name: str
 
-    overs_bowled: float
-    runs_conceded: int
-    wickets_taken: int
+    match_id: str
+    innings_id: str
 
-    catches: int
-    run_outs: int
-    stumpings: int
+    # Batting
+    runs: int = Field(..., ge=0)
+    balls_faced: int = Field(..., ge=0)
 
+    # Bowling
+    overs_bowled: float = Field(..., ge=0)
+    runs_conceded: int = Field(..., ge=0)
+    wickets: int = Field(..., ge=0)
 
-class ContributionResponse(BaseModel):
-    batting_score: float
-    bowling_score: float
-    fielding_score: float
-    total_score: float
-    impact: str
+    # Fielding
+    catches: int = Field(0, ge=0)
+    runouts: int = Field(0, ge=0)
+    stumpings: int = Field(0, ge=0)
+
+    # Khel AI extensions
+    match: Optional[Dict] = None
+    innings: Optional[Dict] = None
+    teams: Optional[Dict] = None
+    players: Optional[Dict] = None
