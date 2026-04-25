@@ -2,3 +2,4 @@ fastapi
 schemas
 services
 pydantic
+uvicorn
