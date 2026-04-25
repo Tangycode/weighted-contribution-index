@@ -1,0 +1,17 @@
+{
+  "player_id": "P999",
+  "player_name": "Elite Allrounder",
+  "match_id": "M999",
+  "innings_id": "I999",
+
+  "runs": 2,
+  "balls_faced": 15,
+
+  "overs_bowled": 0,
+  "runs_conceded": 0,
+  "wickets": 0,
+
+  "catches": 3,
+  "runouts": 2,
+  "stumpings": 1
+}
