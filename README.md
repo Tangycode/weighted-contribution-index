@@ -60,5 +60,20 @@ POST /api/v1/weighted-contribution
   "balls_faced": 40,
   "overs_bowled": 4,
   "runs_conceded": 28,
+
+Sample Response
+{
+  "total_score": 82.5,
+  "impact": "High"
+}
+Validation Errors
+Missing player_id
+Missing match_id
+Invalid runs/balls relationship
+Negative values
+Integration Notes
+Supports Khel AI data structure
+Handles zero overs safely
+Frontend-ready JSON
   "wickets": 2
 }
